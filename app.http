@@ -1,0 +1,33 @@
+
+//API (1) GET list of All Plyers
+GET http://localhost:3000/players/
+###
+
+//Api (2) add  a player
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "kaladhar",
+  "jerseyNumber": 17,
+  "role": "Bowler"
+}
+###
+
+//Api 3 get player details by id
+GET http://localhost:3000/players/1/
+###
+
+//Api  4 update player details
+PUT http://localhost:3000/players/2/
+Content-Type: application/json
+
+{
+  "playerName": "Sreenu",
+  "jerseyNumber": 54,
+  "role": "All-rounder"
+}
+###
+
+// Api 5 delete player details
+DELETE http://localhost:3000/players/2/
